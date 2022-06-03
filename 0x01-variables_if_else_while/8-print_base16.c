@@ -1,22 +1,26 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
+#include <ctype.h>
 /**
- * main - Entry point
+ * main - Prints all single digits of base 16 followed by new line
  *
- * Return: Always 0 (Success)
+ * Return: returns 0
  */
 int main(void)
 {
-	char character;
-	for (character = '0' ; character <= '9' ; character++)
+	int digit;
+
+	for (digit = '0'; digit <= '9'; digit++)
 	{
-		putchar(character);
-	}
-	for (character = 'a' ; character <= 'f' ; character++)
-	{
-		putchar(character);
+		putchar(digit);
+		if (digit == '9')
+		{
+			digit = 'a';
+			for (; digit <= 'f'; digit++)
+			{
+				putchar(digit);
+			}
+			break;
+		}
 	}
 	putchar('\n');
 	return (0);
