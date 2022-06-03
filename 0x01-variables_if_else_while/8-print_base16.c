@@ -5,7 +5,6 @@
  *
  * Return: returns 0
  */
-
 int main(void)
 {
 	int digit;
@@ -26,3 +25,4 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
+
