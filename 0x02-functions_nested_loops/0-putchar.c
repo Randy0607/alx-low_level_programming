@@ -1,12 +1,16 @@
+/*
+ * File: 0-putchar.c
+ *
+ */
+
 #include "main.h"
 
 /**
- *  * main - Entry point
- *   *
- *    * Return: nothing, return void
- *     */
-
-int main.h(void)
+ * main - Prints "_putchar" followed by a new line.
+ * 
+ * Return: Always 0.
+ */
+int main(void)
 {
 	_putchar('_');
 	_putchar('p');
@@ -16,7 +20,7 @@ int main.h(void)
 	_putchar('h');
 	_putchar('a');
 	_putchar('r');
-	_putchar('\n');
+	_putchar('\n')
 
 	return (0);
 }
