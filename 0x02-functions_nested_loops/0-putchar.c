@@ -6,7 +6,7 @@
  *    * Return: nothing, return void
  *     */
 
-int main(void)
+int main.h(void)
 {
 	_putchar('_');
 	_putchar('p');
