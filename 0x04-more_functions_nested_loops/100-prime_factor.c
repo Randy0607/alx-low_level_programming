@@ -1,17 +1,21 @@
 #include<stdio.h>
 #include<math.h>
+
 /**
- * * main -checks for upper case
- * *
- * * @void: return nothing
- * * Return: 1 for digit and 0 for else
- * */
+ * main -checks for upper case
+ *
+ * @void: return nothing
+ * Return: 1 for digit and 0 for else
+ */
+
 int main(void)
 {
 	long n;
 	int i;
 	int max;
+
 	max = -1;
+
 	n = 612852475143;
 	while (n % 2 == 0)
 	{
@@ -33,3 +37,4 @@ int main(void)
 	printf("%d\n", max);
 	return (0);
 }
+
