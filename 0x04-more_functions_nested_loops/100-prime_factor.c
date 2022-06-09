@@ -1,25 +1,35 @@
-#include <stdio.h>
-
+#include<stdio.h>
+#include<math.h>
 /**
- * main - print the largest primt factor of a number
- *
- * Return: Always 0.
- */
+ * * main -checks for upper case
+ * *
+ * * @void: return nothing
+ * * Return: 1 for digit and 0 for else
+ * */
 int main(void)
 {
-	long num = 612852475143;
-	int divisor = 2;
-
-	while (num > 1)
+	long n;
+	int i;
+	int max;
+	max = -1;
+	n = 612852475143;
+	while (n % 2 == 0)
 	{
-		while (num % divisor == 0)
-		{
-			maxdivisor = divisor;
-			num /= divisor;
-		}
-
-		divisor += 1;
+		max = 2;
+		n = n / 2;
 	}
-	printf("%d\n", maxdivisor);
+	for (i = 3; i <= sqrt(n); i = i + 2)
+	{
+		while (n % i == 0)
+		{
+			max = i;
+			n = n / i;
+		}
+	}
+	if (n > 2)
+	{
+		max = n;
+	}
+	printf("%d\n", max);
 	return (0);
 }
