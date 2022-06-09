@@ -1,27 +1,39 @@
 #include <stdio.h>
+
 /**
- * main - check the code for Holberton School students.
+ * main -checks for upper case
  *
- * Return: void.
+ * @void: return nothing
+ * Return: 1 for digit and 0 for else
  */
 
 int main(void)
 {
-	int i = 1;
+	int i;
 
-	printf("1");
-	for (n = 2; n <= 100; n++)
-	{
-		printf(" ");
-		if (n % 3 == 0)
-			printf("Fizz");
-		if (n % 5 == 0)
+	for (i = 1; i <= 100; i++)
+		{
+		if (i == 100)
+		{
 			printf("Buzz");
-		if (n % 3 != 0 && n % 5 != 0
-			printf("%d", n);
+		}
+		else if ((i % 3) == 0 && (i % 5) == 0)
+		{
+			printf("FizzBuzz ");
+		}
+		else if ((i % 3) == 0)
+		{
+			printf("Fizz ");
+		}
+		else if ((i % 5) == 0)
+		{
+			printf("Buzz ");
+		}
+		else
+		{
+			printf("%d ", i);
+		}
 	}
-
-	
-	putchar('\n');
+	printf("\n");
 	return (0);
-	}
+}
