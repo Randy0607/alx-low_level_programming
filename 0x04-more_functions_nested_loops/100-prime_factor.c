@@ -1,25 +1,25 @@
-#include <main.h>
+#include <stdio.h>
+
 /**
- * main - prime numbers
+ * main - print the largest primt factor of a number
  *
  * Return: Always 0.
  */
 int main(void)
 {
+	long num = 612852475143;
+	int divisor = 2;
 
-unsigned int long n = 612852475143, a = (int) sqrt(n);
-
-while (1)
-{
-
-	if (n % a == 0)
+	while (num > 1)
 	{
-		printf("%lu \n", n / a);
-		break;
+		while (num % divisor == 0)
+		{
+			maxdivisor = divisor;
+			num /= divisor;
+		}
+
+		divisor += 1;
 	}
-	a--;
-
-}
-
-return (0);
+	printf("%d\n", maxdivisor);
+	return (0);
 }
