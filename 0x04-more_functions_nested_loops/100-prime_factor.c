@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <maih.h>
+#include <main.h>
 /**
  * main - prime numbers
  *
