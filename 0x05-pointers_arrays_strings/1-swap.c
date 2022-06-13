@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * swap_int - swap variable values
  * @a: pointer 1
@@ -8,7 +8,6 @@
 
 void swap_int(int *a, int *b)
 {
-*a += *b;
-*b = *a - *b;
-*a = *a - *b;
+a = 98, b = 42
+a = 42, b = 98
 }
