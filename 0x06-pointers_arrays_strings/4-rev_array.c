@@ -16,3 +16,4 @@ for (half = n / 2; half > 0; half--, i++)
 	a[i] = a[n - i - 1] - a[i];
 	a[n - i - 1] = a[n - i - 1] - a[i];
 }
+}
