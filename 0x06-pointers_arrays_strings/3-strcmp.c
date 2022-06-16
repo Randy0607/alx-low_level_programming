@@ -1,26 +1,20 @@
 #include "main.h"
 /**
- * _strcmp - compares two strings
- * @s1: string 1
- * @s2: string 2
- * Return: 0 if matching, and ns1 - ns2 if not matching
-*/
-
-int _strcmp(char *s1, char *s2)
-{
-int i;
-
-/**
- * We have reached the end of S1 OR we have reached the end of S2
+ * _strspn -search n display length
  *
-*/
-
-for (i = 0; s1[i] != '\0' || s2[i] != '\0'; i++)
+ * @s: stores the input
+ * @accept: source
+ * Return: comp
+ */
+unsigned int _strspn(char *s, char *accept)
 {
-	if (s1[i] != s2[i])
+	unsigned int i, j;
+	for (i = 0; i < s[i] !='\0'; i++)
 	{
-		return (s1[i] - s2[i]);
+		for (j = 0; i < accept[j] !='\0'; j++)
+		{
+			if (*s == *accept)
+				return accept[j];
+		}
 	}
-}
-return (0);
 }
