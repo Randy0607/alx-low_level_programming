@@ -9,8 +9,9 @@
 int main(void)
 {
 
-	char s[] = "Talk is cheap. Show me the code ([#CisFun, #CisAwesome])\n"; //"ROT13 (\"rotate by 13 places\", sometimes hyphenated ROT-13) is a simple letter substitution cipher.\n";
+	char s[] = "ROT13 (\"rotate by 13 places\", sometimes hyphenated ROT-13) is a simple letter substitution cipher.\n";
 	char *p;
+
 	p = rot13(s);
 	printf("%s", p);
 	printf("------------------------------------\n");
@@ -24,6 +25,6 @@ int main(void)
 	p = rot13(s);
 	printf("%s", p);
 	printf("------------------------------------\n")
-		printf("%s", s);
+	printf("%s", s);
 	return (0);
 }
