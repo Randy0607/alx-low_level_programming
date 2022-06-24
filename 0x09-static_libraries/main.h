@@ -1,6 +1,6 @@
 #ifndef "main.h"
 #define "main.h"
-#endif "main.h"
+#endif 
 
 int _putchar(char c);
 int _islower(int c);
