@@ -1,13 +1,7 @@
 #ifndef main.h
-#define "main.h"
+#define "main.h
 
-/**
- *
- * File: main,h
- * Auth: Julien Barbier
- * Desc: Header file containing the prototypes of all functions
- * included in the static library libmy.a
- */
+/*copy list from task*/
 
 int _putchar(char c);
 int _islower(int c);
