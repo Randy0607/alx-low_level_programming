@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -32,7 +32,7 @@ void simple_print_buffer(int *buffer, unsigned int size)
 }
 
 /**
- * main - check the code for Holberton School students.
+ * main - check the code
  *
  * Return: Always 0.
  */
@@ -41,7 +41,7 @@ int main(void)
     int *a;
 
     a = array_range(0, 10);
-    printf("DONE\n");
+    printf("\n");
     simple_print_buffer(a, 11);
     free(a);
     return (0);
